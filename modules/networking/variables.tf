@@ -23,3 +23,10 @@ variable "subnet_names" {
   type = set(string)
   description = "This defines the subnets within the virtual network"
 }
+
+# Bastion
+variable "bastion_required" {
+  type = bool
+  description = "This defines whether the bastion service is required"
+  default = false
+}
